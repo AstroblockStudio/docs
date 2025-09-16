@@ -3,11 +3,11 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
 export default defineConfig({
-  title: "Docs",
-  description: "Astroblock Documentation",
+  title: "Astroblock Documentation",
+  description: "The onchain galaxy",
   logoUrl: "https://app.astroblock.xyz/logo.png",
   ogImageUrl:
-    "https://vocs.dev/api/og?logo=%logo&title=%title&description=%description",
+    "https://vocs.dev/api/og?logo=https://docs.astroblock.xyz/logo.png&title=%title&description=%description",
   font: {
     google: "Roboto",
   },
