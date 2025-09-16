@@ -2,20 +2,17 @@ import { defineConfig } from "vocs";
 
 export default defineConfig({
   title: "Docs",
+  font: {
+    google: "Roboto",
+  },
   sidebar: [
     {
       text: "What is Astroblock?",
       link: "/what-is-astroblock",
     },
     {
-      text: "Integration Options",
-      collapsed: false,
-      items: [
-        {
-          text: "Typescript SDK",
-          link: "/integrations/sdk",
-        },
-      ],
+      text: "The App",
+      link: "/applications/app",
     },
     {
       text: "Concepts",
@@ -34,6 +31,16 @@ export default defineConfig({
         {
           text: "Stories",
           link: "/use-cases/stories",
+        },
+      ],
+    },
+    {
+      text: "Integration Options",
+      collapsed: false,
+      items: [
+        {
+          text: "Typescript SDK",
+          link: "/integrations/sdk",
         },
       ],
     },
