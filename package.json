@@ -8,8 +8,12 @@
     "preview": "vocs preview"
   },
   "dependencies": {
+    "katex": "^0.16.22",
     "react": "latest",
     "react-dom": "latest",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
+    "tailwindcss": "^4.1.13",
     "vocs": "latest"
   }
 }

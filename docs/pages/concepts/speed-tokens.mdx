@@ -1,0 +1,44 @@
+# Speed & Tokens
+
+Players can influence their movement speed by depositing \$ASTRO tokens into the map contract using the `deposit()` and `withdraw()` methods.
+
+<img src="/player-2.1.png" alt="speed and tokens visualization" style={{objectFit: "contain"}} />
+
+## How Speed Works
+
+The speed calculation depends on **3 factors** from the map configuration:
+
+1. <span className="text-blue-600 font-bold">$$\textcolor{blue}{s_0}$$</span> = **base speed** of the map
+2. <span className="text-red-600 font-bold">$$\textcolor{red}{f_b}$$</span> = **burning factor** (multiplier for burned tokens)
+3. <span className="text-green-600 font-bold">$$\textcolor{green}{f_h}$$</span> = **holding factor** (multiplier for held tokens)
+
+## The Speed Formula
+
+<div className="flex flex-col gap-4 items-center justify-center border py-4 px-8 bg-blue-500/20">
+<p className="text-2xl">
+$$\text{speed} = \textcolor{blue}{s_0} + \textcolor{red}{f_b} \cdot \ln(1 + b) + \textcolor{green}{f_h} \cdot \log_2(1 + h)$$
+</p>
+</div>
+
+**Where:**
+- $$h$$ = *amount of tokens staked by the player*
+- $$b$$ = *amount of tokens burned by the player (for a single move)*
+
+## Strategy
+
+This design encourages both long-term holding and active burning while keeping the system simple, fair and strategic.
+
+:::info
+TL;DR: hold and/or burn to move faster.
+:::
+
+:::note
+The burned tokens come directly from the player's map deposit
+:::
+
+## Token Mechanics
+
+- **Holding** tokens gives you a passive speed bonus that scales logarithmically
+- **Burning** tokens gives you an immediate speed boost for that specific move with diminishing returns
+- **No speed cap** - more burn = more speed (just less efficient over time)
+- **Strategic depth** - players must balance between holding for passive benefits and burning for immediate gains

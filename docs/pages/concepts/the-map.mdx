@@ -1,7 +1,37 @@
-# The Astroblock Map
+# The Galaxy Map
 
-## Player
+The Astroblock Map smart contract is the core piece of infrastructure that powers the Astroblock galaxy. It manages the 2D coordinate system, player positions, and all the celestial objects within the galaxy.
 
-## Stars
 
-## Player Speed
+## Entities
+
+The galaxy map is also filled with entities which are celestial objects defined by their `x` & `y` positions as well as a radius `r`.
+
+<img src="/player-3.1.png" alt="player image" style={{objectFit: "contain"}} />
+
+### Tokens
+:::note
+WIP
+:::
+### Hooks
+:::note
+WIP
+:::
+
+
+
+## Map
+
+The map is completely configurable by the game owner. From the game size, fuel token, speed factors, etc.
+
+| Name | Unit  | Description |
+|------|-------------|-------------|
+| `width` | `uint120` | The width of the map |
+| `height` | `uint120` | The height of the map |
+| `baseStarMetadataURI` | `string` | "" | The base metadata URI for the stars |
+| `burnAddress` | `address` | The address that will receive the burned tokens |
+| `baseSpeed` | `uint256` | The base speed |
+| `burningFactor` | `uint256` | The burning factor |
+| `holdingFactor` | `uint256` | The holding factor |
+
+

@@ -1,0 +1,91 @@
+# Integration Getting Started
+
+Astroblock provides both a TypeScript SDK and a GraphQL API for integrating with the galaxy map system. Whether you're building a game, analytics dashboard, or any other application, you can choose the approach that best fits your needs.
+
+:::warning
+These tools are still in development and subject to change.
+:::
+
+:::note
+Onchain read/write methods coming soon to the SDK.
+:::
+
+## Installation
+
+### TypeScript SDK
+
+```bash
+npm install astroblock-sdk
+# or
+yarn add astroblock-sdk
+# or
+pnpm add astroblock-sdk
+```
+
+### GraphQL Endpoint
+
+```
+https://astroblock-explorer-mainnet.up.railway.app/
+```
+
+## Quick Start
+
+### With TypeScript SDK
+
+```typescript
+import { createAstroblockSdk } from 'astroblock-sdk'
+
+// Create SDK instance
+const sdk = createAstroblockSdk('mainnet') // or 'testnet'
+
+// Query player data
+const player = await sdk.player({ address: "0x..." })
+console.log(player.position) // { x: 100, y: 200 }
+
+// Query stars
+const stars = await sdk.entitys({
+  where: {
+    entityType: EntityType.Star
+  },
+  limit: 500
+})
+
+// Query loot events
+const loot = await sdk.lootEvents({ limit: 10 })
+```
+
+### With GraphQL
+
+```javascript
+const response = await fetch('https://astroblock-explorer-mainnet.up.railway.app/', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    query: `
+      query GetPlayer($address: String!) {
+        player(address: $address) {
+          position {
+            x
+            y
+          }
+          arrivalTime
+        }
+      }
+    `,
+    variables: {
+      address: "0x..."
+    }
+  })
+})
+
+const data = await response.json()
+console.log(data.data.player)
+```
+
+## Need Help?
+
+- Ask questions on our [Telegram](https://t.me/astroblockbase) for developer support
+- Check out [source code on GitHub](https://github.com/AstroblockStudio/sdk)
+- Explore the live [GraphQL playground](https://astroblock-explorer-mainnet.up.railway.app/)

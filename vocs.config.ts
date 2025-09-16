@@ -1,9 +1,19 @@
 import { defineConfig } from "vocs";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 export default defineConfig({
   title: "Docs",
+  description: "Astroblock Documentation",
+  logoUrl: "https://app.astroblock.xyz/logo.png",
+  ogImageUrl:
+    "https://vocs.dev/api/og?logo=%logo&title=%title&description=%description",
   font: {
     google: "Roboto",
+  },
+  markdown: {
+    remarkPlugins: [remarkMath],
+    rehypePlugins: [rehypeKatex],
   },
   sidebar: [
     {
@@ -11,46 +21,44 @@ export default defineConfig({
       link: "/what-is-astroblock",
     },
     {
-      text: "The App",
+      text: "Getting Started",
       link: "/applications/app",
     },
     {
-      text: "Concepts",
+      text: "How It Works",
       collapsed: false,
       items: [
         {
-          text: "The Map",
+          text: "The Galaxy Map",
           link: "/concepts/the-map",
+        },
+        {
+          text: "Player Movement",
+          link: "/concepts/player-movement",
+        },
+        {
+          text: "Speed & Tokens",
+          link: "/concepts/speed-tokens",
         },
       ],
     },
     {
-      text: "Use Cases",
+      text: "Applications",
       collapsed: false,
       items: [
         {
-          text: "Stories",
+          text: "Astroblock:Stories",
           link: "/use-cases/stories",
         },
       ],
     },
     {
-      text: "Integration Options",
+      text: "Integration",
       collapsed: false,
       items: [
         {
-          text: "Typescript SDK",
-          link: "/integrations/sdk",
-        },
-      ],
-    },
-    {
-      text: "Reference",
-      collapsed: false,
-      items: [
-        {
-          text: "AstroblockMap",
-          link: "/reference/astroblockmap",
+          text: "Getting Started",
+          link: "/integrations/getting-started",
         },
       ],
     },
@@ -68,6 +76,9 @@ export default defineConfig({
       icon: "warpcast",
       link: "https://farcaster.xyz/~/channel/astroblock",
     },
+    {
+      icon: "telegram",
+      link: "https://t.me/astroblockbase",
+    },
   ],
-  logoUrl: "https://app.astroblock.xyz/logo.png",
 });
