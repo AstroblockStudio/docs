@@ -19,7 +19,6 @@ export const Hero = () => {
 
   return (
     <div className="relative w-full h-[450px] overflow-hidden">
-      <div className="absolute inset-0 bg-black/30 blur-xl"></div>
       {/* Animated crossing ships */}
       <div className="absolute inset-0">
         {images.map((image, index) => {
