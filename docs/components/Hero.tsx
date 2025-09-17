@@ -3,10 +3,26 @@ import teams from "../public/teams.json";
 
 export const Hero = () => {
   const [images] = useState<string[]>(teams.map((t) => t.shipImage));
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
   // Generate random animation properties for each ship
   const getRandomAnimationProps = (index: number) => {
-    const duration = 15 + Math.random() * 12; // Random duration between 7-15 seconds
+    // Responsive duration: faster on mobile, slower on desktop
+    const baseDuration = isMobile ? 6 : 15;
+    const durationVariation = isMobile ? 4 : 12;
+    const duration = baseDuration + Math.random() * durationVariation;
+
     const delay = Math.random() * -10; // Random delay between 0 to -10 seconds
     const topPosition = Math.random() * 90; // Random vertical position (0-90%)
 
@@ -18,7 +34,7 @@ export const Hero = () => {
   };
 
   return (
-    <div className="relative w-full h-[450px] overflow-hidden">
+    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
       {/* Animated crossing ships */}
       <div className="absolute inset-0">
         {images.map((image, index) => {
@@ -27,7 +43,7 @@ export const Hero = () => {
           return (
             <div
               key={index}
-              className="absolute w-12 h-12 animate-cross-left"
+              className="absolute w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 animate-cross-left"
               style={{
                 top: animationProps.top,
                 animationDuration: animationProps.duration,
