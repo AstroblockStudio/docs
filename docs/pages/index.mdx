@@ -1,18 +1,22 @@
 ---
 layout: landing
+content:
+  width: 100%
 ---
 
 import '../styles.css'
 import 'katex/dist/katex.min.css';
 
-import { HomePage } from 'vocs/components'
+import { HomePage, Button } from 'vocs/components'
+import { Hero } from '../components/Hero'
+import { Title } from '../components/Title'
 
-<HomePage.Root>
-  <HomePage.Logo />
-  <HomePage.Tagline>Astroblock Documentation</HomePage.Tagline>
+<HomePage.Root className="">
+  <Hero />
+  <Title />
   <HomePage.Description>Concepts and guides for Astroblock: The onchain galaxy.</HomePage.Description>
   <HomePage.Buttons>
-    <HomePage.Button href="/what-is-astroblock" variant="accent">What is Astroblock?</HomePage.Button>
-    <HomePage.Button href="https://github.com/AstroblockStudio">GitHub</HomePage.Button>
+    <Button href="/what-is-astroblock">What is Astroblock?</Button>
+    <HomePage.Button className="primary" href="https://github.com/AstroblockStudio">GitHub</HomePage.Button>
   </HomePage.Buttons>
 </HomePage.Root>

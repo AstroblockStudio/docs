@@ -13,12 +13,27 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "types": ["react", "react-dom"],
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": [
+    "**/*.ts", 
+    "**/*.tsx",
+    "vocs.config.ts",
+    "docs/**/*.ts",
+    "docs/**/*.tsx",
+    "docs/**/*.mdx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "docs/dist"
+  ]
 }

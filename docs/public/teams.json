@@ -1,0 +1,314 @@
+[
+  {
+    "id": "0",
+    "name": "Astroblock",
+    "description": "The astroblock fighter ship for Astro Fleet equipped with a laser cannon and a shield generator. It is the smallest and cheapest ship in the fleet.",
+    "image": "https://app.astroblock.xyz/api/images/ship/astroblock?size=601",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/ship/base.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "astroblock"
+    },
+    "featured": false
+  },
+  {
+    "id": "1",
+    "name": "Degen",
+    "description": "The degen fighter ship for Astro Fleet, equipped with a laser cannon and a shield generator. It is the smallest and cheapest ship in the fleet.",
+    "image": "https://app.astroblock.xyz/api/images/ship/degen?size=600",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/ship/degen.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "degen"
+    },
+    "featured": false
+  },
+  {
+    "id": "10",
+    "name": "Yellow",
+    "description": "The yellow ship for Astro Fleet, equipped with a laser cannon and a shield generator. It is the smallest and cheapest ship in the fleet.",
+    "image": "https://app.astroblock.xyz/api/images/ship/yellow?size=600",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/ship/yellow.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "yellow"
+    },
+    "featured": false
+  },
+  {
+    "id": "12",
+    "name": "Super",
+    "description": "The super ship for Astro Fleet, equipped with a laser cannon and a shield generator. It is the smallest and cheapest ship in the fleet.",
+    "image": "https://app.astroblock.xyz/api/images/ship/super?size=600",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/ship/super.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "super"
+    },
+    "featured": false
+  },
+  {
+    "id": "13",
+    "name": "Rainbow",
+    "description": "The rainbow ship for Astro Fleet, equipped with a laser cannon and a shield generator. It is the smallest and cheapest ship in the fleet.",
+    "image": "https://app.astroblock.xyz/api/images/ship/rainbow?size=602",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/teams/13-ship.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "rainbow"
+    },
+    "featured": false
+  },
+  {
+    "id": "14",
+    "name": "Superfluid",
+    "description": "The Superfluid ship harnesses revolutionary continuous-flow energy technology, allowing it to maintain a constant stream of power to its systems. This unique capability enables uninterrupted shield regeneration and sustained weapon fire, making it highly efficient in prolonged engagements despite its compact size.",
+    "image": "https://app.astroblock.xyz/api/images/ship/superfluid?size=600",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/ship/superfluid.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "superfluid"
+    },
+    "featured": true
+  },
+  {
+    "id": "15",
+    "name": "Anon",
+    "description": "The anon ship for Astro Fleet, equipped with a laser cannon and a shield generator. It is the smallest and cheapest ship in the fleet.",
+    "image": "https://app.astroblock.xyz/api/images/ship/anon?size=600",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/ship/anon.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": ""
+    },
+    "featured": false
+  },
+  {
+    "id": "16",
+    "name": "Aave",
+    "description": "",
+    "image": "https://app.astroblock.xyz/api/images/ship/aave?size=601",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/teams/16-ship.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "aave"
+    },
+    "featured": false
+  },
+  {
+    "id": "17",
+    "name": "Morpho",
+    "description": "",
+    "image": "https://app.astroblock.xyz/api/images/ship/morpho?size=601",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/teams/17-ship.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "morpho"
+    },
+    "featured": false
+  },
+  {
+    "id": "18",
+    "name": "Unichain",
+    "description": "",
+    "image": "https://app.astroblock.xyz/api/images/ship/unichain?size=601",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/teams/18-ship.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "unichain"
+    },
+    "featured": false
+  },
+  {
+    "id": "19",
+    "name": "Optimism",
+    "description": "",
+    "image": "https://app.astroblock.xyz/api/images/ship/optimism?size=601",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/teams/19-ship.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "optimism"
+    },
+    "featured": false
+  },
+  {
+    "id": "2",
+    "name": "Moxie",
+    "description": "The moxie ship for Astro Fleet, equipped with a laser cannon and a shield generator. It is the smallest and cheapest ship in the fleet.",
+    "image": "https://app.astroblock.xyz/api/images/ship/moxie?size=600",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/ship/moxie.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "moxie"
+    },
+    "featured": false
+  },
+  {
+    "id": "20",
+    "name": "Ethereum Foundation",
+    "description": "",
+    "image": "https://app.astroblock.xyz/api/images/ship/ethereum%20foundation?size=601",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/teams/20-ship.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "ethereum"
+    },
+    "featured": false
+  },
+  {
+    "id": "21",
+    "name": "Privy",
+    "description": "",
+    "image": "https://app.astroblock.xyz/api/images/ship/privy?size=601",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/teams/21-ship.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "privy"
+    },
+    "featured": false
+  },
+  {
+    "id": "22",
+    "name": "Safe",
+    "description": "",
+    "image": "https://app.astroblock.xyz/api/images/ship/safe?size=601",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/teams/22-ship.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "safe"
+    },
+    "featured": false
+  },
+  {
+    "id": "23",
+    "name": "Lido",
+    "description": "",
+    "image": "https://app.astroblock.xyz/api/images/ship/lido?size=601",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/teams/23-ship.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "lido"
+    },
+    "featured": false
+  },
+  {
+    "id": "24",
+    "name": "Bankless",
+    "description": "",
+    "image": "https://app.astroblock.xyz/api/images/ship/bankless?size=602",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/teams/24-ship.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "bankless"
+    },
+    "featured": false
+  },
+  {
+    "id": "25",
+    "name": "Celo",
+    "description": "",
+    "image": "https://app.astroblock.xyz/api/images/ship/celo?size=601",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/teams/25-ship.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "celo"
+    },
+    "featured": false
+  },
+  {
+    "id": "26",
+    "name": "LayerZero",
+    "description": "",
+    "image": "https://app.astroblock.xyz/api/images/ship/layerzero?size=602",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/teams/26-ship.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "layerzero"
+    },
+    "featured": false
+  },
+  {
+    "id": "27",
+    "name": "Blockscout",
+    "description": "",
+    "image": "https://app.astroblock.xyz/api/images/ship/blockscout?size=603",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/teams/27-ship.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "blockscout"
+    },
+    "featured": false
+  },
+  {
+    "id": "3",
+    "name": "Clanker",
+    "description": "The clanker ship for Astro Fleet, equipped with a laser cannon and a shield generator. It is the smallest and cheapest ship in the fleet.",
+    "image": "https://app.astroblock.xyz/api/images/ship/clanker?size=600",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/ship/clanker.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "clanker"
+    },
+    "featured": false
+  },
+  {
+    "id": "4",
+    "name": "Higher",
+    "description": "The higher ship for Astro Fleet, equipped with a laser cannon and a shield generator. It is the smallest and cheapest ship in the fleet.",
+    "image": "https://app.astroblock.xyz/api/images/ship/higher?size=600",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/ship/higher.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "higher"
+    },
+    "featured": false
+  },
+  {
+    "id": "5",
+    "name": "Build",
+    "description": "The build ship for Astro Fleet, equipped with a laser cannon and a shield generator. It is the smallest and cheapest ship in the fleet.",
+    "image": "https://app.astroblock.xyz/api/images/ship/build?size=600",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/ship/build.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "build"
+    },
+    "featured": false
+  },
+  {
+    "id": "6",
+    "name": "Zora",
+    "description": "The zora ship for Astro Fleet, equipped with a laser cannon and a shield generator. It is the smallest and cheapest ship in the fleet.",
+    "image": "https://app.astroblock.xyz/api/images/ship/zora?size=600",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/ship/zora.png",
+    "team": {
+      "type": "farcaster_channel",
+      "value": "zora"
+    },
+    "featured": true
+  },
+  {
+    "id": "7",
+    "name": "Ted",
+    "description": "The ted ship for Astro Fleet, equipped with a laser cannon and a shield generator. It is the smallest and cheapest ship in the fleet.",
+    "image": "https://app.astroblock.xyz/api/images/ship/ted?size=600",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/ship/ted.png",
+    "team": {
+      "type": "farcaster_account",
+      "value": "ted"
+    },
+    "featured": false
+  },
+  {
+    "id": "8",
+    "name": "Dwr",
+    "description": "The dwr normandy ship for Astro Fleet, equipped with a laser cannon and a shield generator. It is the smallest and cheapest ship in the fleet.",
+    "image": "https://app.astroblock.xyz/api/images/ship/dwr?size=600",
+    "shipImage": "https://74uo5vxwtwd6nfci.public.blob.vercel-storage.com/ship/dwr.png",
+    "team": {
+      "type": "farcaster_account",
+      "value": "dwr"
+    },
+    "featured": true
+  }
+]

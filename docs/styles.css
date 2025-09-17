@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+button.primary {
+  @apply bg-blue-500 text-white rounded-none;
+}
+
+/* Generic animated crossing ships */
+@keyframes crossLeft {
+  0% { transform: translateX(-100px); }
+  100% { transform: translateX(calc(100vw + 100px)); }
+}
+
+.animate-cross-left {
+  animation: crossLeft linear infinite;
+}
