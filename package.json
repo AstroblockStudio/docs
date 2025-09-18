@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "katex": "^0.16.22",
+    "lucide-react": "^0.544.0",
     "react": "latest",
     "react-dom": "latest",
     "rehype-katex": "^7.0.1",

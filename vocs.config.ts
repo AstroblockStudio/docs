@@ -21,12 +21,13 @@ export default defineConfig({
       link: "/what-is-astroblock",
     },
     {
-      text: "Getting Started",
-      link: "/applications/app",
+      text: "Explore now !",
+      link: "/explore-now",
     },
     {
       text: "How It Works",
       collapsed: false,
+      link: "/how-it-works",
       items: [
         {
           text: "The Galaxy Map",
