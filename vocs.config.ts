@@ -30,15 +30,19 @@ export default defineConfig({
       link: "/how-it-works",
       items: [
         {
-          text: "The Galaxy Map",
+          text: "🌌 Map",
           link: "/concepts/the-map",
         },
         {
-          text: "Player Movement",
+          text: "☀️ Entities",
+          link: "/concepts/entities",
+        },
+        {
+          text: "🛸 Players",
           link: "/concepts/player-movement",
         },
         {
-          text: "Speed & Tokens",
+          text: "⛽ Fuel",
           link: "/concepts/speed-tokens",
         },
       ],
