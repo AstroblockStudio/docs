@@ -34,12 +34,12 @@ export default defineConfig({
           link: "/concepts/the-map",
         },
         {
-          text: "☀️ Entities",
-          link: "/concepts/entities",
-        },
-        {
           text: "🛸 Players",
           link: "/concepts/player-movement",
+        },
+        {
+          text: "☀️ Entities",
+          link: "/concepts/entities",
         },
         {
           text: "⛽ Fuel",
