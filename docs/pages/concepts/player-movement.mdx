@@ -2,16 +2,16 @@
 
 The Astroblock Map smart contract tracks all players in a 2D grid using simple `x` & `y` coordinates.
 
+<img src="/player-move-horizontal.png" alt="player movement visualization" className="" />
+
 ## How Movement Works
 
 Players can move around the galaxy by calling the `move()` method on the map contract. When a player calls this method:
 
 - Their position is updated on the map
-- An `arrivalTime` is calculated based on their speed
-- The system can track their real-time position during transit
-- You can check if a player is in motion by comparing timestamps
+- An `arrivalTime` is calculated based on their **speed** (which depends on fuel deposits, see next section)
 
-<img src="/player-motion.png" alt="player movement visualization" style={{objectFit: "contain"}} />
+<img src="/player-motion.png" alt="player movement visualization" className="" />
 
 ## Real-time Tracking
 
