@@ -1,13 +1,31 @@
 # Entities
 
-The galaxy map is also filled with entities which are celestial objects defined by their `x` & `y` positions as well as a radius `r`.
+The galaxy map is filled with entities which are celestial objects defined by their `x` & `y` positions as well as a radius `r`.
 
 <img src="/player-3.1.png" alt="player image" style={{objectFit: "contain"}} />
 
-### Tokens
+### Discovery
+
+Today, the main aim of the game is to discover new entities. Instead of just pushing them into the map in a few transactions, they've been generated offchain & players
+can discover them by exploring the map and requesting a central server's signature to add them to the map.
+
 :::note
-WIP
+Note: Players MUST be nearby (half the radius of the entity) to be able to add them to the map. Vicinity is checked directly onchain. (More on this later)
 :::
+
+This is what it looks like:
+
+<img src="/universe.png" alt="discovery image" style={{objectFit: "contain"}} />
+
+As of writting 5070 (of 30k) entities (stars) have been discovered by players ! You can see the trail some of them are leaving. All of which is permanently onchain.
+
+<img src="/partial-universe.png" alt="5k image" style={{objectFit: "contain"}} />
+
+### Tokens
+
+All entities are also represented onchain by a ERC721 tokens that are all stored in the map contract for now. You can see the tokens being minted in the OpenSea collection.
+[OpenSea collection](https://opensea.io/collection/astroblock-map)
+
 ### Hooks
 :::note
 WIP
