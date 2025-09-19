@@ -26,17 +26,24 @@ A 10 milion px by 10 milion px map filled with 30k stars. As of writting 5070 st
 All entities are also represented onchain by a ERC721 tokens that are all stored in the map contract for now. You can see the tokens being minted as they are added to the map in the game, in the OpenSea collection.
 [OpenSea collection](https://opensea.io/collection/astroblock-map)
 
-## Anchoring
+## Entity Vicinity
+
+In order to create interactions. A zone around every entity is simply defined by half of the entity's radius. This zone is defined as the entity's **vicinity**.
+It can be checked onchain & used by any external contracts.
 
 <img src="/anchoring.png" alt="anchoring image" style={{objectFit: "contain"}} />
 
 :::info
-Coming soon
+It is used for **star discovery**. When a player submits a star discovery request, the map contract checks if the player is in the vicinity of the star. If they are (among other checks), the star is added to the map.
 ::: 
 
 ## Hooks
 
-:::info
-Coming soon
-:::
+Hooks are smart contracts that can be used on any entity and react to players moving in and out of their vicinity.
+
+- `onMovingTo()` : Called when a player moves into the vicinity of the entity.
+- `onLeave()` : Called when a player moves out of the vicinity of the entity.
+- Hook contract can also call `isMoving()` getter in order to know if a player has arrive or is in transit to it.
+ 
+<img src="/entity-module.png" alt="entity module image" style={{objectFit: "contain"}} />
 
