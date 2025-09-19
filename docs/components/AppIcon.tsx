@@ -1,4 +1,4 @@
-import { EarthIcon, Globe } from "lucide-react";
+import { Globe } from "lucide-react";
 
 type Type = "browser" | "baseapp" | "farcaster";
 

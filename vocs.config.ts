@@ -67,6 +67,16 @@ export default defineConfig({
         },
       ],
     },
+    {
+      text: "Reference",
+      collapsed: false,
+      items: [
+        {
+          text: "AstroblockMap",
+          link: "/reference/astroblockmap",
+        },
+      ],
+    },
   ],
   socials: [
     {
